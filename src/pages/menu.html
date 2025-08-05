@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Food Website</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="container mt-5">
+        <h1>Our Menu</h1>
+        <div class="menu-item">
+            <h2>Item 1</h2>
+            <p>Description of Item 1.</p>
+            <p>Price: $10.00</p>
+        </div>
+        <div class="menu-item">
+            <h2>Item 2</h2>
+            <p>Description of Item 2.</p>
+            <p>Price: $12.00</p>
+        </div>
+        <div class="menu-item">
+            <h2>Item 3</h2>
+            <p>Description of Item 3.</p>
+            <p>Price: $15.00</p>
+        </div>
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

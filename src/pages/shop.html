@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Food Website</title>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container mt-5">
+        <h1>Shop</h1>
+        <p>Welcome to our shop! Browse our selection of delicious food items.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/item1.jpg" class="card-img-top" alt="Food Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 1</h5>
+                        <p class="card-text">$10.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/item2.jpg" class="card-img-top" alt="Food Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 2</h5>
+                        <p class="card-text">$12.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../assets/images/item3.jpg" class="card-img-top" alt="Food Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 3</h5>
+                        <p class="card-text">$15.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load the navbar
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
