@@ -1,0 +1,48 @@
+body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-hero{
+            background-image: url('./images/background.jpg');
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+        .navbar {
+            background: rgba(255,255,255,0.2) !important;
+            backdrop-filter: blur(8px);
+        }
+        .nav-link, .navbar-brand {
+            color: #fff !important;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .nav-link.active {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 100px 0;
+        }
+        #about, #menu, #shop, #contact {
+            background: #fff;
+            color: #333;
+        }
+        #about {
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: 40px;
+        }
+
+        .logo{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .logo-name {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
