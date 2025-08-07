@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Savibo Restaurant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: #a83232;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #a83232;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #a83232;
+            margin-bottom: 16px;
+        }
+        .about-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .team {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            flex: 1 1 200px;
+            background: #f4eaea;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-list li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .contact-info {
+            background: #f4eaea;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background: #a83232;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px;
+            }
+            .team {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savibo Restaurant</h1>
+        <p>Where Taste Meets Tradition</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="section">
+            <h2>Our Story</h2>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" class="about-img">
+            <p>
+                Welcome to Savibo, a culinary haven where flavors come alive and memories are made. Established in 2022, Savibo was born from a passion for authentic cuisine and a desire to bring people together over delicious meals. Our restaurant blends traditional recipes with modern flair, offering a unique dining experience in the heart of the city.
+            </p>
+            <p>
+                From our warm, inviting atmosphere to our carefully curated menu, every detail at Savibo is designed to delight. Whether you're joining us for a family dinner, a romantic evening, or a celebration with friends, we promise an unforgettable experience.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Chef John">
+                    <h3>Chef John Doe</h3>
+                    <p>Executive Chef</p>
+                    <p>With over 20 years of experience, Chef John crafts each dish with passion and creativity, bringing the best of local and international flavors to your table.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Manager Lisa">
+                    <h3>Lisa Smith</h3>
+                    <p>Restaurant Manager</p>
+                    <p>Lisa ensures every guest feels at home, overseeing daily operations and maintaining our high standards of service.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Sous Chef Alex">
+                    <h3>Alex Brown</h3>
+                    <p>Sous Chef</p>
+                    <p>Alex brings innovation to the kitchen, assisting Chef John and perfecting every plate that leaves our kitchen.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Signature Dishes</h2>
+            <ul class="menu-list">
+                <li>
+                    <strong>Grilled Herb Chicken</strong> – Tender chicken marinated in fresh herbs, grilled to perfection and served with seasonal vegetables.
+                </li>
+                <li>
+                    <strong>Seafood Risotto</strong> – Creamy risotto with a medley of fresh seafood, finished with parmesan and a touch of lemon zest.
+                </li>
+                <li>
+                    <strong>Vegetarian Delight</strong> – A colorful array of roasted vegetables, quinoa, and house-made dressing.
+                </li>
+                <li>
+                    <strong>Classic Tiramisu</strong> – Our take on the Italian classic, with layers of espresso-soaked ladyfingers and mascarpone cream.
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Our Values</h2>
+            <p>
+                At Savibo, we believe in quality, sustainability, and community. We source our ingredients locally whenever possible, support regional farmers, and strive to minimize our environmental footprint. Our team is dedicated to providing exceptional service and making every guest feel welcome.
+            </p>
+        </section>
+        <section class="section contact-info">
+            <h2>Contact & Location</h2>
+            <p>
+                <strong>Address:</strong> 123 Savibo Street, City Center, Country<br>
+                <strong>Phone:</strong> (123) 456-7890<br>
+                <strong>Email:</strong> info@savibo.com
+            </p>
+            <p>
+                <strong>Opening Hours:</strong><br>
+                Monday - Friday: 11:00 AM - 10:00 PM<br>
+                Saturday - Sunday: 9:00 AM - 11:00 PM
+            </p>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Savibo Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>

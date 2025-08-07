@@ -11,12 +11,13 @@ body, html {
         }
         .navbar {
             background: rgba(255,255,255,0.2) !important;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(3.5px);
         }
         .nav-link, .navbar-brand {
-            color: #fff !important;
+            color: greenyellow!important;
             font-weight: 500;
             letter-spacing: 1px;
+            font-size: 18px;
         }
         .nav-link.active {
             text-decoration: underline;

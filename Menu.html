@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Savibo Restaurant Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ecf0f1;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .menu-section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            padding: 30px;
+        }
+        .menu-section h2 {
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-size: 2em;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            max-width: 70%;
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 1.15em;
+            color: #34495e;
+        }
+        .item-desc {
+            color: #7f8c8d;
+            font-size: 0.98em;
+            margin-top: 4px;
+        }
+        .item-price {
+            font-weight: bold;
+            color: #f39c12;
+            font-size: 1.1em;
+            min-width: 80px;
+            text-align: right;
+        }
+        @media (max-width: 600px) {
+            .menu-section {
+                padding: 15px;
+            }
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .item-price {
+                margin-top: 8px;
+            }
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savibo</h1>
+        <p>Discover our delicious menu, crafted with passion and fresh ingredients.</p>
+    </header>
+    <nav>
+        <a href="#starters">Starters</a>
+        <a href="#mains">Main Courses</a>
+        <a href="#pasta">Pasta</a>
+        <a href="#pizza">Pizza</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+    </nav>
+
+    <div class="menu-section" id="starters">
+        <h2>Starters</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Bruschetta</span>
+                    <div class="item-desc">Grilled bread topped with fresh tomatoes, garlic, basil, and olive oil.</div>
+                </div>
+                <span class="item-price">$7</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Caprese Salad</span>
+                    <div class="item-desc">Fresh mozzarella, tomatoes, basil, drizzled with balsamic glaze.</div>
+                </div>
+                <span class="item-price">$9</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Garlic Bread</span>
+                    <div class="item-desc">Warm baguette slices with garlic butter and herbs.</div>
+                </div>
+                <span class="item-price">$6</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Calamari Fritti</span>
+                    <div class="item-desc">Crispy fried calamari served with lemon and aioli.</div>
+                </div>
+                <span class="item-price">$12</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-section" id="mains">
+        <h2>Main Courses</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Grilled Salmon</span>
+                    <div class="item-desc">Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</div>
+                </div>
+                <span class="item-price">$22</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Chicken Parmigiana</span>
+                    <div class="item-desc">Breaded chicken breast topped with marinara sauce and mozzarella cheese.</div>
+                </div>
+                <span class="item-price">$18</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Eggplant Parmesan</span>
+                    <div class="item-desc">Layers of eggplant, marinara, and cheese baked to golden perfection.</div>
+                </div>
+                <span class="item-price">$16</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Steak Florentine</span>
+                    <div class="item-desc">Grilled ribeye steak with garlic spinach and roasted potatoes.</div>
+                </div>
+                <span class="item-price">$28</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-section" id="pasta">
+        <h2>Pasta</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Spaghetti Carbonara</span>
+                    <div class="item-desc">Classic Roman pasta with pancetta, eggs, Parmesan, and black pepper.</div>
+                </div>
+                <span class="item-price">$15</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Penne Arrabbiata</span>
+                    <div class="item-desc">Penne pasta tossed in spicy tomato sauce with garlic and chili flakes.</div>
+                </div>
+                <span class="item-price">$14</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Lasagna</span>
+                    <div class="item-desc">Layers of pasta, beef ragu, béchamel, and cheese baked to perfection.</div>
+                </div>
+                <span class="item-price">$17</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Fettuccine Alfredo</span>
+                    <div class="item-desc">Fettuccine pasta in a creamy Parmesan sauce.</div>
+                </div>
+                <span class="item-price">$15</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-section" id="pizza">
+        <h2>Pizza</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Margherita</span>
+                    <div class="item-desc">Tomato sauce, mozzarella, fresh basil.</div>
+                </div>
+                <span class="item-price">$13</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Pepperoni</span>
+                    <div class="item-desc">Tomato sauce, mozzarella, spicy pepperoni slices.</div>
+                </div>
+                <span class="item-price">$15</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Vegetarian</span>
+                    <div class="item-desc">Tomato sauce, mozzarella, bell peppers, mushrooms, olives, onions.</div>
+                </div>
+                <span class="item-price">$14</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Quattro Formaggi</span>
+                    <div class="item-desc">Mozzarella, gorgonzola, parmesan, and fontina cheeses.</div>
+                </div>
+                <span class="item-price">$16</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-section" id="desserts">
+        <h2>Desserts</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Tiramisu</span>
+                    <div class="item-desc">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</div>
+                </div>
+                <span class="item-price">$8</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Panna Cotta</span>
+                    <div class="item-desc">Creamy vanilla pudding topped with berry coulis.</div>
+                </div>
+                <span class="item-price">$7</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Gelato</span>
+                    <div class="item-desc">Italian-style ice cream, ask for available flavors.</div>
+                </div>
+                <span class="item-price">$6</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Cannoli</span>
+                    <div class="item-desc">Crispy pastry shells filled with sweet ricotta cream and chocolate chips.</div>
+                </div>
+                <span class="item-price">$7</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu-section" id="drinks">
+        <h2>Drinks</h2>
+        <ul class="menu-list">
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Espresso</span>
+                    <div class="item-desc">Rich Italian coffee shot.</div>
+                </div>
+                <span class="item-price">$3</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Cappuccino</span>
+                    <div class="item-desc">Espresso with steamed milk and foam.</div>
+                </div>
+                <span class="item-price">$4</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Soft Drinks</span>
+                    <div class="item-desc">Coke, Sprite, Fanta, and more.</div>
+                </div>
+                <span class="item-price">$3</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Mineral Water</span>
+                    <div class="item-desc">Still or sparkling.</div>
+                </div>
+                <span class="item-price">$2</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">House Wine (Glass)</span>
+                    <div class="item-desc">Red or white, ask for selection.</div>
+                </div>
+                <span class="item-price">$7</span>
+            </li>
+            <li class="menu-item">
+                <div class="item-details">
+                    <span class="item-name">Beer</span>
+                    <div class="item-desc">Local and imported options available.</div>
+                </div>
+                <span class="item-price">$5</span>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 Savibo Restaurant. All rights reserved.
+    </footer>
+</body>
+</html></ul>

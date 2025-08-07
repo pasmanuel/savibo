@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savibo Restaurant Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background: #d35400;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #d35400;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .shop-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .shop-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #d35400;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .product-card img {
+            width: 100%;
+            max-width: 180px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .product-name {
+            font-size: 1.2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .product-desc {
+            font-size: 0.98em;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .product-price {
+            font-size: 1.1em;
+            color: #d35400;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .buy-btn {
+            background: #d35400;
+            color: #fff;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #e67e22;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Savibo Restaurant Shop</h1>
+        <p>Order your favorite dishes and products online!</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="shop-container">
+        <div class="shop-title">Savibo Featured Products</div>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Savibo Signature Sauce">
+                <div class="product-name">Savibo Signature Sauce</div>
+                <div class="product-desc">Our famous house-made sauce, perfect for pasta, pizza, and more.</div>
+                <div class="product-price">$8.99</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Fresh Pasta Pack">
+                <div class="product-name">Fresh Pasta Pack</div>
+                <div class="product-desc">Handmade pasta, crafted daily for authentic Italian flavor.</div>
+                <div class="product-price">$12.50</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1464306076886-debede6b2b24?auto=format&fit=crop&w=400&q=80" alt="Olive Oil Bottle">
+                <div class="product-name">Extra Virgin Olive Oil</div>
+                <div class="product-desc">Premium cold-pressed olive oil from local farms.</div>
+                <div class="product-price">$15.00</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Savibo Gift Card">
+                <div class="product-name">Savibo Gift Card</div>
+                <div class="product-desc">Give the gift of delicious food! Redeemable in-store or online.</div>
+                <div class="product-price">$25.00</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Savibo Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
