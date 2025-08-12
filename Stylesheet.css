@@ -10,11 +10,11 @@ body, html {
             position: relative;
         }
         .navbar {
-            background: rgba(255,255,255,0.2) !important;
+            background: #8d2d2d !important;
             backdrop-filter: blur(3.5px);
         }
         .nav-link, .navbar-brand {
-            color: greenyellow!important;
+            color: white!important;
             font-weight: 500;
             letter-spacing: 1px;
             font-size: 18px;
@@ -47,3 +47,67 @@ body, html {
             font-weight: bold;
             color: #333;
         }
+
+        /* Footer code */
+
+        footer {
+        background-color: #8d2d2d/* Wine color */;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .footer-section {
+        flex: 1 1 250px;
+        margin: 10px;
+    }
+
+    .footer-section h3 {
+        border-bottom: 2px solid #c59d9d;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-section a:hover {
+        color: #f4d03f;
+    }
+
+    .social-icons a {
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: invert(1);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid #c59d9d;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
