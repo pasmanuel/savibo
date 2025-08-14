@@ -9,12 +9,12 @@ body, html {
             min-height: 100vh;
             position: relative;
         }
-        .navbar {
-            background: #8d2d2d !important;
+         .navbar1{
+            background: #8d2d2d;
             backdrop-filter: blur(3.5px);
         }
-        .nav-link, .navbar-brand {
-            color: white!important;
+        .nav-link, .navbar-brand{
+            color: #8d2d2d!important;
             font-weight: 500;
             letter-spacing: 1px;
             font-size: 18px;
